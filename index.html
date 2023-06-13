@@ -44,16 +44,16 @@
 </head>
 
 <body>
-    <audio id="playMusic" preload="auto" autoplay loop>
+    <!-- <audio id="playMusic" preload="auto" autoplay loop>
         <source src="asset/Music.mp3" type="audio/mp3">
-    </audio>
+    </audio> -->
     <div class="home">
         <div class="teks">
             <p class="title">The Wedding Of</p>
             <h1 class="nama">Ardy & Revi</h1>
             <h1 class="tanggal">24 . 06 . 2023</h1>
         </div>
-        <div class="btn-home">
+        <div class="btn-home" id="btn" onclick="audio.play();">
             <a href="#calon">Buka Undangan</a>
         </div>
     </div>
@@ -325,6 +325,9 @@
         //  date
 
         // music
+        const audio = new Audio();
+        audio.src = "asset/Music.mp3";
+
         // var musik = new Audio();
         // musik.src = "asset/Music.mp3"
         // musik.loop = true;
