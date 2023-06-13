@@ -44,6 +44,9 @@
 </head>
 
 <body>
+    <audio id="playMusic" preload="auto" autoplay loop>
+        <source src="asset/Music.mp3" type="audio/mp3">
+    </audio>
     <div class="home">
         <div class="teks">
             <p class="title">The Wedding Of</p>
@@ -57,7 +60,7 @@
 
     <!-- calon pengantin -->
     <section id="calon" class="calon">
-        <div class="heading" >Calon Pengantin</div>
+        <div class="heading">Calon Pengantin</div>
         <p class="subheading">Assalamu'alaikum Wr Wb <br>
             Tanpa mengurangi rasa hormat, kami bermaksud mengundang Bapak/Ibu/Saudara/i pada acara resepsi pernikahan
             anak kami</p>
@@ -322,10 +325,18 @@
         //  date
 
         // music
-        var musik = new Audio();
-        musik.src = "asset/Music.mp3"
-        musik.loop = true;
-        musik.play();
+        // var musik = new Audio();
+        // musik.src = "asset/Music.mp3"
+        // musik.loop = true;
+        // musik.play();
+
+        // const music = document.getElementById('playMusic');
+        // const btn = document.querySelector('.btn-home')
+
+        // btn.addEventListener('click',function(){
+        //     music.volume=1
+        //     music.play()
+        // })
     </script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
