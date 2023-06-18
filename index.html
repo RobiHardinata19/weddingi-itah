@@ -43,7 +43,7 @@
     <!-- font -->
 </head>
 
-<body>
+<body onload="showNama()">
     <!-- <audio id="playMusic" preload="auto" autoplay loop>
         <source src="asset/Music.mp3" type="audio/mp3">
     </audio> -->
@@ -52,6 +52,11 @@
             <p class="title">The Wedding Of</p>
             <h1 class="nama">Ardy & Revi</h1>
             <h1 class="tanggal">24 . 06 . 2023</h1>
+        </div>
+        <div class="label">
+            <p class="headlabel">Tanpa Mengurangi Rasa Hormat Kami Mengundang</p>
+            <span id="nama">Tamu Undangan</span>
+            <p class="tempatlabel">Di tempat,</p>
         </div>
         <div class="btn-home" id="btn" onclick="audio.play();">
             <a href="#calon">Buka Undangan</a>
@@ -340,6 +345,21 @@
         //     music.volume=1
         //     music.play()
         // })
+
+        // LABEL
+        // Mengambil nilai parameter "nama" dari URL
+        function getNamaFromURL() {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get('nama');
+        }
+
+        // Menampilkan nama di halaman web
+        function showNama() {
+            const nama = getNamaFromURL();
+            const namaElement = document.getElementById('nama');
+            namaElement.innerText = nama;
+        }
+        // LABEL
     </script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
