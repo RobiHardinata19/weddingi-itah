@@ -366,8 +366,60 @@ body {
     color: #232323;
 }
 
-.w-90{
+.w-90 {
     width: 90%;
 }
 
 /* Memories end */
+
+/* label */
+.label{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0000005e;
+    border-radius: 10px;
+    margin: auto;
+    width: 90%;
+    padding: 10px 5px;
+}
+
+.headlabel {
+    /* margin-top: 13px; */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    /* line-height: 16px; */
+    text-align: center;
+    color: #FFFFFF;
+    /* background-color: yellow; */
+    margin-bottom: 0px;
+}
+
+.tempatlabel {
+    /* margin-top: 13px; */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    /* line-height: 16px; */
+    text-align: center;
+    color: #FFFFFF;
+    /* background-color: black; */
+}
+
+#nama {
+    /* margin-top: 51px; */
+    /* background-color: red; */
+    font-family: 'Niconne';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    /* line-height: 24px; */
+    color: #FFB8B8;
+    margin-bottom: 2px;
+}
+
+/* label */
